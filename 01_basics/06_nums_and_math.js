@@ -17,7 +17,7 @@ const hundreds = 1000000
 
 //++++++++++++++++++++++++ Maths +++++++++++++++++
 
-// console.log(Math);
+// console.log(Math); //  Object [Math] {}
 // console.log(Math.abs(-4)); // 4
 // console.log(Math.round(4.4)); // 4
 // console.log(Math.round(4.5)); // 5
@@ -36,7 +36,7 @@ const hundreds = 1000000
 const min = 20
 const max = 30
 // console.log((Math.random() * (max - min +1)) + min);
-console.log(Math.floor((Math.random() * (max - min +1)) + min));
+// console.log(Math.floor((Math.random() * (max - min +1)) + min));
 
 
 
