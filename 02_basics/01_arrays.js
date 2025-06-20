@@ -4,6 +4,8 @@ const myArr = [0, 1, 2, 3, 4, 5]
 const myHeors = ["shaktiman", "naagraj"]
 
 const myArr2 = new Array(1, 2, 3, 4)
+// console.log(myArr2[2]);
+
 // console.log(myArr[1]);
 
 // Array methods
@@ -20,8 +22,9 @@ const myArr2 = new Array(1, 2, 3, 4)
 
 // const newArr = myArr.join()
 
-// console.log(myArr);
-// console.log( newArr);
+// console.log(myArr);  // [ 0, 1, 2, 3, 4, 5 ]
+// console.log( newArr); // 0,1,2,3,4,5 
+// console.log(typeof(newArr));  // string
 
 
 // slice, splice
