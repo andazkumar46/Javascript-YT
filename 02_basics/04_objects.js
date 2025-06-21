@@ -58,8 +58,43 @@ users[1].email = "andaz@google.com"
 // console.log(Object.values(tinderUser));  // [ '123abc', 'Summy', false ]
 // console.log(Object.entries(tinderUser));  // [ [ 'id', '123abc' ], [ 'name', 'Summy' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // true
-console.log(tinderUser.hasOwnProperty('isLogged'));  // false
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // true
+// console.log(tinderUser.hasOwnProperty('isLogged'));  // false
+
+
+// ++++++++++++++++++ object Destructureing +++++++++++++
+
+const course = {
+    courseName: "JS in hindi",
+    coursePrice: "999",
+    courseInstructor: "Andaz"
+}
+
+// method 1 to access
+// course.courseInstructor
+
+// method 2
+const {courseInstructor} = course
+console.log(courseInstructor); // Andaz
+
+// we can change the name of (courseInstructor)
+const {courseInstructor: instructor} = course
+console.log(instructor);  // Andaz
+
+// ++++++++++++++++++  API's Format  +++++++++++++++++++++++
+// +++++++++++++++++  Type 1  ++++++++++++++++++++++++++++++
+// {
+//     "courseName": "JS in hindi",
+//     "coursePrice": "999",
+//     "courseInstructor": "Andaz"
+// }
+
+// +++++++++++++++++  Type 2  ++++++++++++++++++++++++++++++
+[
+    {},
+    {},
+    {}
+]
 
 
 
