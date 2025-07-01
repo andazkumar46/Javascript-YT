@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout</title>
+</head>
+<body>
+    <h1>Welcome to the JavaScript</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // ++++++++++++  Method 1 to use setTimeout() +++++++++++
+    setTimeout(function(){
+        console.log("Andaz");
+    },2000)
+
+   // ++++++++++++  Method 2 to use setTimeout() +++++++++++
+    const sayAndaz = function(){
+        console.log("welocme Back andaz Kumar"); 
+    }
+    setTimeout(sayAndaz ,2000)
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Hii Andaz How Are You!!"
+    }
+    const changeMe = setTimeout(changeText ,2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED");
+        
+    })
+</script>
+</html>
